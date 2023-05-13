@@ -1,9 +1,10 @@
-package com.example.myproj
+package com.example.myproj.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.example.myproj.R
 import com.example.myproj.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

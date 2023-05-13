@@ -1,21 +1,11 @@
 package com.example.myproj
 
-data class Track(
-    val id: Long,
-    val title: String,
-    val artist: String,
-    val album: String,
-    val duration: Long
-)
+
 data class TracksResponse(
     val data: ArrayList<Data>
 )
-data class track(
-    val checksum: String,
-    val `data`: List<Data>,
-    val next: String,
-    val total: Int
-)
+
+
 
 data class Data(
     val album: Album,

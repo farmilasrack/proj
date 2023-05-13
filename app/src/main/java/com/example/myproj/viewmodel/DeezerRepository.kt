@@ -2,7 +2,7 @@ package com.example.myproj.models
 
 
 import com.example.myproj.Data
-import com.example.myproj.Track
+import com.example.myproj.model.DeezerApiService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

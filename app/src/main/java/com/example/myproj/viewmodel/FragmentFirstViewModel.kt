@@ -1,8 +1,9 @@
-package com.example.myproj
+package com.example.myproj.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.myproj.Data
 import com.example.myproj.models.PlaylistRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
