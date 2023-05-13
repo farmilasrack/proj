@@ -21,9 +21,11 @@ class FragmentSecond : Fragment() {
     companion object {
         const val numberInArray = "number"
         const val name = "name"
-        const val album = "desc"
+        const val duration = "duration"
         const val url = "url"
-        const val allDescription = "allDescription"
+        const val artist = "artist"
+
+
     }
 
     override fun onCreateView(
@@ -37,10 +39,11 @@ class FragmentSecond : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Glide.with(view).load(arguments?.getString(url)).fitCenter().into(binding.tvPhoto)
-        binding.tvName.text = arguments?.getString(name)
-        binding.tvDescription.text = arguments?.getString(album)
-        binding.tvAllDescription.text = arguments?.getString(allDescription)
+        Glide.with(view).load(arguments?.getString(url)).into(binding.imageView)
+        binding.name.text = arguments?.getString(name)
+        binding.durationTextView.text = arguments?.getString(duration)
+        binding.artisttextview.text = arguments?.getString(artist)
+
     }
 
     override fun onDestroy() {
