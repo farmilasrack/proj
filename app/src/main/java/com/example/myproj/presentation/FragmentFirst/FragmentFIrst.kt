@@ -1,6 +1,6 @@
 package com.example.myproj
 
-import com.example.myproj.view.TrackAdapter
+import com.example.myproj.presentation.FragmentFirst.TrackAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myproj.databinding.FragmentFirstBinding
-import com.example.myproj.viewmodel.FragmentFirstViewModel
+import com.example.myproj.presentation.FragmentFirst.FragmentFirstViewModel
 import kotlin.time.Duration.Companion.seconds
 
 class FragmentFirst : Fragment(), TrackAdapter.Listener {

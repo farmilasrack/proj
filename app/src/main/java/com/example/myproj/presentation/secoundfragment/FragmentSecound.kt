@@ -12,7 +12,6 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 
 
-
 class FragmentSecond : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null

@@ -2,7 +2,7 @@ package com.example.myproj.models
 
 
 import com.example.myproj.Data
-import com.example.myproj.model.DeezerApiService
+import com.example.myproj.data.DeezerApiService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -20,11 +20,8 @@ class PlaylistRepository {
 
   suspend fun getPlaylistTracks(playlistId: Long): ArrayList<Data> {
     val response = deezerApiService.getPlaylistTracks(playlistId)
-    return if (response.isSuccessful) {
-      response.body()?.data?:  ArrayList<Data>()
-    } else {
-      ArrayList<Data>()
-    }
+    return response.body()?.data?:  ArrayList<Data>()
+
   }
 
 }

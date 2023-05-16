@@ -1,4 +1,4 @@
-package com.example.myproj.model
+package com.example.myproj.data
 
 
 import com.example.myproj.TracksResponse
